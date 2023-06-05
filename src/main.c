@@ -5,7 +5,7 @@
 
 int main()
 {
-    // configuraÁıes e vari·veis
+    // configura√ß√µes e vari√°veis
     setlocale(LC_ALL, "Portuguese_Brazil");
     char *q[12];
     char *questao[12];
@@ -17,26 +17,26 @@ int main()
     int ptsa = 0, ptsb = 0, pts;
     char p1[20], p2[20];
 
-    // Declarar var·veis como n„o usadas
+    // Declarar var√°veis como n√£o usadas
     for (i = 0; i < 12; i++)
     {
         questao[i] = NULL;
         resp[i] = 0;
     }
 
-    // questıes
-    q[0] = "Quais s„o as formas de representaÁ„o de um algoritmo?\n 1) Descritivo narrativo, fluxograma, pseudocÛdigo\n 2) Narrativo, fluxograma, cÛdigo\n 3) Receita de bolo, fluxograma, pseudocÛdigo\n 4) DescriÁ„o narrativa, fluxograma, pseudocÛdigo\n 5) NarraÁ„o, gr·fico, portugol\n";
+    // quest√µes
+    q[0] = "Quais s√£o as formas de representa√ß√£o de um algoritmo?\n 1) Descritivo narrativo, fluxograma, pseudoc√≥digo\n 2) Narrativo, fluxograma, c√≥digo\n 3) Receita de bolo, fluxograma, pseudoc√≥digo\n 4) Descri√ß√£o narrativa, fluxograma, pseudoc√≥digo\n 5) Narra√ß√£o, gr√°fico, portugol\n";
     q[1] = "Qual a estrutura correta de um for?\n 1) for(x=0;x<4;x++){}\n 2) for(x=0,x<=4,x++){}\n 3) for x=0;x<4;x++{}\n 4) for(0=0;0<4;0++)[]\n 5) for(x=0;x=>4;x++){}\n";
     q[2] = "Qual o conjunto correto de operadores relacionais?\n 1) +, -, >, =>, =\n 2) =>, >, =, !=, <\n 3) >=, >, ==, !=, <\n 4) +, -, *, /, =\n 5) ==, &&, ||, !=, =\n";
     q[3] = "Qual a estrutura correta de um include?\n 1) #include <stdlib.h>\n 2) #include stdlib.h\n 3) #include <sttdlib.h>\n 4) include <stdlib.h>\n 5) #import <stdlib>\n";
     q[4] = "Qual a maneira correta de declarar um vetor em C?\n 1) int vetor [] = new int[10];\n 2) vetor[10];\n 3) vetor[10][10];\n 4) int vetor[10]\n 5) int vetor[10];\n";
-    q[5] = "Quais os tipos de vari·veis em C?\n 1) char, int, float, double, void\n 2) chat, inteiro, flutuante, dobro, vazio\n 3) byte, long, short, int, char\n 4) bigint, integer, date, varchar, longint\n 5) smallint, String, real, nulo, char\n";
-    q[6] = "Qual das alternativas representa uma declaraÁ„o correta de matriz 4x3?\n 1) int matriz[3][4];\n 2) matriz[4][3];\n 3) int matriz[4][3];\n 4) int matriz(4)(3);\n 5) int matriz[4][3]\n";
-    q[7] = "Em qual alternativa o while est· declarado corretamente?\n 1) while(x=>0);{}\n 2) while(x>5){x++}\n 3) while(x<5){x++}\n 4) while(x==1);\n 5) while(x>4 && <6){}\n";
-    q[8] = "Qual a comparaÁ„o feita pelo operador lÛgico &&?\n 1) or\n 2) and\n 3) or\n 4) not\n 5) diferente\n";
-    q[9] = "Quais as coordenadas da ˙ltima posiÁ„o de uma matriz 9x9?\n 1) [8][8]\n 2) [9][9]\n 3) [10][10]\n 4) [81][81]\n 5) [81][18]\n";
-    q[10] = "Qual o valor da posiÁ„o [2] do vetor[6]={10,20,30,40,50,60}?\n 1) 30\n 2) 40\n 3) 20\n 4) 60\n 5) 10\n";
-    q[11] = "Qual o valor da posiÁ„o [1][1] de uma matriz[2][2]={{5,4},{2,1}}?\n 1) 1\n 2) 2\n 3) 3\n 4) 4\n 5) 5\n";
+    q[5] = "Quais os tipos de vari√°veis em C?\n 1) char, int, float, double, void\n 2) chat, inteiro, flutuante, dobro, vazio\n 3) byte, long, short, int, char\n 4) bigint, integer, date, varchar, longint\n 5) smallint, String, real, nulo, char\n";
+    q[6] = "Qual das alternativas representa uma declara√ß√£o correta de matriz 4x3?\n 1) int matriz[3][4];\n 2) matriz[4][3];\n 3) int matriz[4][3];\n 4) int matriz(4)(3);\n 5) int matriz[4][3]\n";
+    q[7] = "Em qual alternativa o while est√° declarado corretamente?\n 1) while(x=>0);{}\n 2) while(x>5){x++}\n 3) while(x<5){x++}\n 4) while(x==1);\n 5) while(x>4 && <6){}\n";
+    q[8] = "Qual a compara√ß√£o feita pelo operador l√≥gico &&?\n 1) or\n 2) and\n 3) or\n 4) not\n 5) diferente\n";
+    q[9] = "Quais as coordenadas da √∫ltima posi√ß√£o de uma matriz 9x9?\n 1) [8][8]\n 2) [9][9]\n 3) [10][10]\n 4) [81][81]\n 5) [81][18]\n";
+    q[10] = "Qual o valor da posi√ß√£o [2] do vetor[6]={10,20,30,40,50,60}?\n 1) 30\n 2) 40\n 3) 20\n 4) 60\n 5) 10\n";
+    q[11] = "Qual o valor da posi√ß√£o [1][1] de uma matriz[2][2]={{5,4},{2,1}}?\n 1) 1\n 2) 2\n 3) 3\n 4) 4\n 5) 5\n";
     
     
     // respostas
@@ -53,7 +53,7 @@ int main()
     r[10] = 1;
     r[11] = 1;
 
-    // embaralhamento das questıes
+    // embaralhamento das questÔøΩes
     srand(time(NULL));
     i = 0;
     while (i < 12)
