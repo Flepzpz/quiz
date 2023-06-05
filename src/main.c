@@ -86,6 +86,8 @@ int main()
             printf("\nSua resposta: ");
             scanf("%d", &resposta);
             printf("______________________\n");
+
+            //Alternar valor dos pontos baseado no número da tentativa
             switch (i)
             {
             case 0:
@@ -98,6 +100,7 @@ int main()
                 pts = 5;
                 break;
             }
+            
             if (resposta == resp[j])
             {
                 printf("\nResposta correta! Jogador %s recebe %d pontos.\n", jogador == 1 ? p1 : p2, pts);
@@ -111,6 +114,7 @@ int main()
                 }
                 break;
             }
+            //Alternar jogador
             else
             {
                 printf("\nRespota incorreta!\n");
