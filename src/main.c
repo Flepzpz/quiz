@@ -12,10 +12,11 @@ int main()
     int r[12];
     int resp[12];
     int i = 0, x, j;
-    int jogador = 1;
+    int jogador;
     int resposta;
     int ptsa = 0, ptsb = 0, pts;
     char p1[20], p2[20];
+    int d1,d2;
 
     // Declarar varáveis como não usadas
     for (i = 0; i < 12; i++)
@@ -73,6 +74,18 @@ int main()
     scanf("%s", p1);
     printf("\nInsira o nome do jogador 2:\n");
     scanf("%s", p2);
+
+    //Dado para ver quem começa jogando
+    d1 = rand() % 21 +1;
+    d2 = rand() % 21 +1;
+    printf("\nDado do jogador 1: %d\n",d1);
+    printf("Dado do jogador 2: %d\n",d2);
+    if(d1>=d2){
+        jogador = 1;
+    }
+    else{
+        jogador = 2;
+    }
 
 
     // Perguntas do quiz funcionando
