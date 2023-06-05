@@ -53,7 +53,7 @@ int main()
     r[10] = 1;
     r[11] = 1;
 
-    // embaralhamento das quest�es
+    // embaralhamento das questões
     srand(time(NULL));
     i = 0;
     while (i < 12)
