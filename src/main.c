@@ -16,7 +16,7 @@ int main()
     int resposta;
     int ptsa = 0, ptsb = 0, pts;
     char p1[20], p2[20];
-    int d1,d2;
+    int d1, d2;
 
     // Declarar varáveis como não usadas
     for (i = 0; i < 12; i++)
@@ -38,8 +38,7 @@ int main()
     q[9] = "Quais as coordenadas da última posição de uma matriz 9x9?\n 1) [8][8]\n 2) [9][9]\n 3) [10][10]\n 4) [81][81]\n 5) [81][18]\n";
     q[10] = "Qual o valor da posição [2] do vetor[6]={10,20,30,40,50,60}?\n 1) 30\n 2) 40\n 3) 20\n 4) 60\n 5) 10\n";
     q[11] = "Qual o valor da posição [1][1] de uma matriz[2][2]={{5,4},{2,1}}?\n 1) 1\n 2) 2\n 3) 3\n 4) 4\n 5) 5\n";
-    
-    
+
     // respostas
     r[0] = 4;
     r[1] = 1;
@@ -75,18 +74,19 @@ int main()
     printf("\nInsira o nome do jogador 2:\n");
     scanf("%s", p2);
 
-    //Dado para ver quem começa jogando
-    d1 = rand() % 21 +1;
-    d2 = rand() % 21 +1;
-    printf("\nDado do jogador 1: %d\n",d1);
-    printf("Dado do jogador 2: %d\n",d2);
-    if(d1>=d2){
+    // Dado para ver quem começa jogando
+    d1 = rand() % 21 + 1;
+    d2 = rand() % 21 + 1;
+    printf("\nDado do jogador 1: %d\n", d1);
+    printf("Dado do jogador 2: %d\n", d2);
+    if (d1 >= d2)
+    {
         jogador = 1;
     }
-    else{
+    else
+    {
         jogador = 2;
     }
-
 
     // Perguntas do quiz funcionando
     for (j = 0; j < 12; j++)
@@ -100,7 +100,7 @@ int main()
             scanf("%d", &resposta);
             printf("______________________\n");
 
-            //Alternar valor dos pontos baseado no número da tentativa
+            // Alternar valor dos pontos baseado no número da tentativa
             switch (i)
             {
             case 0:
@@ -113,7 +113,7 @@ int main()
                 pts = 5;
                 break;
             }
-            
+
             if (resposta == resp[j])
             {
                 printf("\nResposta correta! Jogador %s recebe %d pontos.\n", jogador == 1 ? p1 : p2, pts);
@@ -121,16 +121,16 @@ int main()
                 {
                     ptsa += pts;
                 }
-                else 
+                else
                 {
                     ptsb += pts;
                 }
                 break;
             }
-            //Alternar jogador
+            // Alternar jogador
             else
             {
-                printf("\nRespota incorreta!\n");
+                printf("\nResposta incorreta!\n");
                 jogador = jogador == 1 ? 2 : 1;
             }
         }
@@ -143,7 +143,7 @@ int main()
     {
         printf("\nQuem venceu foi %s\n", p1);
     }
-    else if(ptsb>ptsa)
+    else if (ptsb > ptsa)
     {
         printf("\nQuem venceu foi %s\n", p2);
     }
@@ -151,7 +151,6 @@ int main()
     {
         printf("\nHouve um empate!\n");
     }
-
 
     return 0;
 }
